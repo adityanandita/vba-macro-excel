@@ -68,7 +68,7 @@ Private Sub Init_Unique_List_Collection(ByRef col As Collection, ByVal SourceWS_
             
             lastRow = .Cells(Rows.Count, "A").End(xlUp).Row
             
-            .Range("A1:A" & lastRow).Sort .Range("A1"), Header:=xlNo
+            .Range("A1:A" & lastRow).Sort.Range("A1"), Header:=xlNo
             
             lastRow = .Cells(Rows.Count, "A").End(xlUp).Row
             
